@@ -1,88 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="meuModulo" lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link rel="shortcut icon" href="assets/img/site/favicon.png" type="image/x-icon">
-    <link rel="icon" href="assets/img/site/favicon.png" type="image/x-icon">
+  <head>
+    <meta charset="utf-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <base href="/">
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="assets/js/main.js"></script>
-
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
+     <title>Felipe Genuino</title>
 
 
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <title>Felipe Genuino — Freelance Designer & Front-end</title>
-</head>
-
-<body>
-
-    <main id="home">
+     <link rel="icon" href="assets/img/theme/favicon.ico" type="image/x-icon" />
+     <link rel="shortcut icon" href="assets/img/theme/favicon.ico" type="image/x-icon" />
 
 
-        <header>
-            <button class="menu__button"><span>Menu</span></button>
-            <a href="index.html" class="page-scroll">
-                <img src="assets/img/site/brand.svg" class="brand" alt="">
-            </a>
-            <nav class="header__nav">
-                <ul class="header__nav__list">
-                    <li class="header__nav__list__item">
-                        <a class="page-scroll header__nav__list__item__link" href="index.html">Home</a>
-                    </li>
-                    <li class="header__nav__list__item active">
-                        <a class="page-scroll header__nav__list__item__link" href=works.html>Works</a>
-                    </li>
-                    <li class="header__nav__list__item">
-                        <a class="page-scroll header__nav__list__item__link" href="mailto:design@felipegenuino.com">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+     <!-- Fonts -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
+     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel='stylesheet' type='text/css'>
 
-        <section class="hero" id="hero" name="hero">
-            <div class="hero__content">
-                <h2 class="hero__title"> Felipe Genuino </h2>
-                <h4 class="hero__subtitle">designer & frontend</h4>
-                <ul class="hero__social-list">
-                    <li class="hero__social-list--item">
-                        <a href="http://www.behance.net/FelipeGenuino" target="_blank" class="hero__social-list--link" data-toggle="tooltip" data-placement="top" title="View Portfolio on Behance">
-                            <i class="fa fa-behance hero__social-list--icon" aria-hidden="true"></i>
-
-                            <!-- <svg  class="hero__social-list--icon" width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1720 339h-511v124h511v-124zm-252 426q-90 0-146 52.5t-62 142.5h408q-18-195-200-195zm16 585q63 0 122-32t76-87h221q-100 307-427 307-214 0-340.5-132t-126.5-347q0-208 130.5-345.5t336.5-137.5q138 0 240.5 68t153 179 50.5 248q0 17-2 47h-658q0 111 57.5 171.5t166.5 60.5zm-1335-50h296q205 0 205-167 0-180-199-180h-302v347zm0-537h281q78 0 123.5-36.5t45.5-113.5q0-144-190-144h-260v294zm-277-509h594q87 0 155 14t126.5 47.5 90 96.5 31.5 154q0 181-172 263 114 32 172 115t58 204q0 75-24.5 136.5t-66 103.5-98.5 71-121 42-134 13h-611v-1260z"></path></svg> -->
-                        </a>
-                    </li>
-                    <li class="hero__social-list--item">
-                        <a href="http://dribbble.com/FelipeGenuino" class="hero__social-list--link">
-                            <i class="fa fa-dribbble hero__social-list--icon" aria-hidden="true"></i>
-
-                            <!-- <svg  class="hero__social-list--icon" target="_blank"  width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1152 1500q-42-241-140-498h-2l-2 1q-16 6-43 16.5t-101 49-137 82-131 114.5-103 148l-15-11q184 150 418 150 132 0 256-52zm-185-607q-21-49-53-111-311 93-673 93-1 7-1 21 0 124 44 236.5t124 201.5q50-89 123.5-166.5t142.5-124.5 130.5-81 99.5-48l37-13q4-1 13-3.5t13-4.5zm-107-212q-120-213-244-378-138 65-234 186t-128 272q302 0 606-80zm684 319q-210-60-409-29 87 239 128 469 111-75 185-189.5t96-250.5zm-805-741q-1 0-2 1 1-1 2-1zm590 145q-185-164-433-164-76 0-155 19 131 170 246 382 69-26 130-60.5t96.5-61.5 65.5-57 37.5-40.5zm223 485q-3-232-149-410l-1 1q-9 12-19 24.5t-43.5 44.5-71 60.5-100 65-131.5 64.5q25 53 44 95 2 6 6.5 17.5t7.5 16.5q36-5 74.5-7t73.5-2 69 1.5 64 4 56.5 5.5 48 6.5 36.5 6 25 4.5zm112 7q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"></path></svg> -->
-                        </a>
-                    </li>
-
-                    <li class="hero__social-list--item">
-                        <a href="skype:felipe.genuino" class="hero__social-list--link"> <i class="fa fa-skype hero__social-list--icon" aria-hidden="true"></i> </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-
-    </main>
+     <!-- Styles -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
 
 
 
-</body>
+
+    <!-- Latest compiled and minified CSS -->
+
+<!-- Optional theme -->
+
+<link rel="stylesheet" href="style.css">
+
+  </head>
+  <body id="app-layout">
+
+    <div id="fb-root"></div>
+
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1190962324282381',
+          xfbml      : true,
+          version    : 'v2.6'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/pt_BR/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+<!-- Hotjar Tracking Code for http://felipegenuino.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:877739,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
 
 
 
+       <div ng-view> </div>
+
+
+<!-- JavaScripts -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" type="text/javascript"> </script>
+
+
+
+<script type="text/javascript" src="lib/angular/angular.min.js"></script>
+<script type="text/javascript" src="lib/angular/angular-route.min.js"></script>
+ 
+
+
+<script type="text/javascript" src="js/app/app.js"></script>
+<script type="text/javascript" src="js/app/controllers.js"></script>
+
+
+
+
+
+
+  </body>
 </html>
